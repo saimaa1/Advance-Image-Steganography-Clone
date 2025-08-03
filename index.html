@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Advanced Image Steganography</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Advanced Image Steganography</h1>
+    <p>Conceal. Encrypt. Reveal.</p>
+  </header>
+
+  <nav class="navigation">
+    <button class="active"><strong>Encode</strong></button>
+    <button><strong>Decode</strong></button>
+    <button><strong>About</strong></button>
+  </nav>
+
+  <main>
+    <section class="how-to-encode">
+      <h2>🔒 How to Encode Secret Messages</h2>
+      <ol>
+        <li>
+          <strong>1. Choose Your Image:</strong><br>
+          Upload PNG, JPG, JPEG, BMP, or GIF. Larger images = more capacity!
+        </li>
+        <li>
+          <strong>2. Write Your Secret:</strong><br>
+          Type any message – text, passwords, or data
+        </li>
+        <li>
+          <strong>3. Add Security:</strong><br>
+          Toggle encryption ON and set a strong password
+        </li>
+        <li>
+          <strong>4. Generate & Download:</strong><br>
+          Get a visually identical image with your hidden message
+        </li>
+      </ol>
+      <div class="tip-box">
+        💡 <em>Tip: The output image looks exactly the same but secretly contains your data!</em>
+      </div>
+    </section>
+  </main>
+
+  <div class="container">
+    <header>
+      <p class="subtitle">Conceal. Encrypt. Reveal.</p>
+      <div class="header-buttons">
+        <button title="Toggle Theme"></button>
+        <button title="Settings">⚙</button>
+      </div>
+    </header>
+
+    <section class="upload-section">
+      <h2>👁 Select Image</h2>
+      <p>Choose an image to hide your secret message in</p>
+      <div class="upload-box" id="upload-box">
+        <input type="file" id="imageInput" hidden>
+        <label for="imageInput" class="upload-label">
+          <img src="https://img.icons8.com/ios/50/image--v1.png" alt="Upload Icon" />
+          <p><strong>Upload an image</strong></p>
+          <p class="sub">Drag and drop an image file, or click to browse</p>
+          <p class="formats">Supports PNG, JPG, JPEG, BMP, GIF (max 50MB)</p>
+        </label>
+      </div>
+    </section>
+
+    <section class="message-section">
+      <h2> Secret Message</h2>
+      <p>Enter the text you want to hide in the image</p>
+      <textarea id="secretMessage" placeholder="Type your secret message here..."></textarea>
+      <div class="encryption-toggle">
+        <label class="switch">
+          <input type="checkbox" id="encryptToggle">
+          <span class="slider round"></span>
+        </label>
+        <span>🔐 Enable Encryption</span>
+      </div>
+      <p id="charCount">0 characters</p>
+      <div class="buttons">
+        <button id="encodeBtn">Encode Message</button>
+        <button id="resetBtn">Reset</button>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>Built with 💙 for 🌍 by <a href="#" target="_blank">Abu Zar Mishwani</a></p>
+    </footer>
+  </div>
+
+
+</body>
+</html>
+
